@@ -16,13 +16,13 @@
 <body>
     <nav>
         <div class="container nav_container">
-            <a href="index.html" class="nav_logo">SEMEZANA</a>
+            <a href="./index.php" class="nav_logo">SEMEZANA</a>
             <ul class="nav_items">
-                <li><a href="./Blog Pages/blog.html">Blog</a></li>
-                <li><a href="./Blog Pages/about.html">About</a></li>
-                <li><a href="./Blog Pages/services.html">Services</a></li>
-                <li><a href="./Blog Pages/contact.html">Contact</a></li>
-                <li><a href="./Blog Pages/signUp.html">Register</a></li>
+                <li><a href="./Blog Pages/blog.php">Blog</a></li>
+                <li><a href="./Blog Pages/about.php">About</a></li>
+                <li><a href="./Blog Pages/services.php">Services</a></li>
+                <li><a href="./Blog Pages/contact.php">Contact</a></li>
+                <li><a href="./Blog Pages/signUp.php">Register</a></li>
                 <li class="nav_profile">
                     <div class="avatar">
                         <img src="./Assets/images/User.png" alt="">
