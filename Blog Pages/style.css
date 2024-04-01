@@ -312,6 +312,14 @@ footer {
     color: var(--color-bg);
 }
 
+.statement {
+    margin-top: 7rem;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .singlepost {
     margin: 6rem 0 2rem;
 }
@@ -351,15 +359,13 @@ footer {
     display: grid;
     place-items: center;
     height: 100vh;
-    margin-top: 4.5rem;
+    background: #f4f4f4;
+    /*margin-top: 4.5rem;*/
 }
 
 .form_section-container {
+    margin-top: 0;
     width: 30%;
-}
-
-.register-main_section {
-    background: #f4f4f4;
 }
 
 .section-1 {
@@ -445,7 +451,7 @@ select {
     margin-bottom: 5rem;
 }
 
-.sidebar_toggle{
+.sidebar_toggle {
     display: none;
 }
 
@@ -615,9 +621,7 @@ select {
         padding: 0;
     }
 
-    .dashboard aside {
-
-    }
+    .dashboard aside {}
 
     .dashboard aside h5 {
         display: none;
@@ -678,22 +682,26 @@ select {
         width: 90%;
     }
 
-    .dashboard{
+    .dashboard {
         margin-top: 5rem;
     }
-    .dashboard_container{
+
+    .dashboard_container {
         grid-template-columns: 1fr;
         gap: 0;
         width: 100%;
         margin-bottom: 0;
     }
-    .dashboard main{
+
+    .dashboard main {
         margin: 0;
     }
-    .dashboard main h2{
+
+    .dashboard main h2 {
         margin-top: 1rem;
     }
-    .dashboard aside{
+
+    .dashboard aside {
         position: fixed;
         box-shadow: 2rem 0 4rem rgba(0, 0, 0, 0.4);
         left: -100%;
@@ -701,27 +709,29 @@ select {
         transition: var(--transition);
         background: var(--color-primary);
     }
-    .dashboard .sidebar_toggle{
+
+    .dashboard .sidebar_toggle {
         display: inline-block;
-        background:#58A399;
+        background: #58A399;
         color: var(--color-white);
         position: fixed;
         right: 0;
         bottom: 4rem;
         z-index: 1;
         width: 2.5rem;
-        height:2.5rem;
+        height: 2.5rem;
         border-radius: 50% 0 0 50%;
         font-size: 1.3rem;
         cursor: pointer;
         box-shadow: -1rem 0 2rem rgba(0, 0, 0, 0.4);
     }
 
-    .dashboard aside h5{
+    .dashboard aside h5 {
         display: inline-block;
 
     }
-    #hide_sidebar{
-        display:none ;
+
+    #hide_sidebar {
+        display: none;
     }
 }
