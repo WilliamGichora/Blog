@@ -8,7 +8,7 @@
 </footer>
 
 
-<script src="../scripts/index.js"></script>
+<script src=" <? ROOT_URL ?>scripts/index.js"></script>
 </body>
 
 </html>

@@ -9,7 +9,7 @@ require 'Configurations/database.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Website</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@ require 'Configurations/database.php';
 <body>
     <nav>
         <div class="container nav_container">
-            <a href="./index.php" class="nav_logo">SEMEZANA</a>
+            <a href="<?=ROOT_URL?>index.php" class="nav_logo">SEMEZANA</a>
             <ul class="nav_items">
                 <li><a href="<?= ROOT_URL?>blog.php">Blog</a></li>
                 <li><a href="<?= ROOT_URL?>about.php">About</a></li>
@@ -31,8 +31,8 @@ require 'Configurations/database.php';
                         <img src="./Assets/images/User.png" alt="">
                     </div>
                     <ul>
-                        <li><a href="<?= ROOT_URL?>Admin Pages/dashboard.html">Dashboard</a></li>
-                        <li><a href="<?= ROOT_URL?>logout.html">Logout</a></li>
+                        <li><a href="<?= ROOT_URL?>Admin Pages/dashboard.php">Dashboard</a></li>
+                        <li><a href="<?= ROOT_URL?>logout.php">Logout</a></li>
                     </ul>
                 </li>
             </ul>

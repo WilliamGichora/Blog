@@ -1,73 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include 'Admin Components/header.php' ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-</head>
-
-<body>
-
-    <nav>
-        <div class="container nav_container">
-            <a href="../index.html" class="nav_logo">SEMEZANA</a>
-            <ul class="nav_items">
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./signUp.html">Register</a></li>
-                <li class="nav_profile">
-                    <div class="avatar">
-                        <img src="../Assets/images/Author1.png" alt="">
-                    </div>
-                    <ul>
-                        <li><a href="">Dashboard</a></li>
-                        <li><a href="">Logout</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <button id="nav_open-btn"><i class="uil uil-bars"></i></button>
-            <button id="nav_close-btn"><i class="uil uil-multiply"></i></button>
+<section class="form_section">
+    <div class="container form_section-container">
+        <h2>Edit User</h2>
+        <div class="alert_message error">
+            <p>This is an Error message</p>
         </div>
-    </nav>
+        <form action="" enctype="multipart/form-data">
+            <input type="text" name="" id="" placeholder="First Name">
+            <input type="text" name="" id="" placeholder="last Name">
+            <select name="" id="">
+                <option value="0">Author</option>
+                <option value="1">Admin</option>
+            </select>
+            <button type="submit" class="Otherbtn">Update User </button>
+        </form>
+    </div>
+</section>
 
-    <section class="form_section">
-        <div class="container form_section-container">
-            <h2>Edit User</h2>
-            <div class="alert_message error">
-                <p>This is an Error message</p>
-            </div>
-            <form action="" enctype="multipart/form-data">
-                <input type="text" name="" id="" placeholder="First Name">
-                <input type="text" name="" id="" placeholder="last Name">
-                <select name="" id="">
-                    <option value="0">Author</option>
-                    <option value="1">Admin</option>
-                </select>
-                <button type="submit" class="Otherbtn">Update User </button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer_socials">
-            <a href="" target="_blank"><i class="uil uil-whatsapp"></i></a>
-            <a href="" target="_blank"><i class="uil uil-linkedin"></i></a>
-            <a href="" target="_blank"><i class="uil uil-instagram-alt"></i></a>
-            <a href="" target="_blank"><i class="uil uil-twitter"></i></a>
-        </div>
-    </footer>
-
-    <script src="../scripts/index.js"></script>
-</body>
-
-</html>
+<?php include '../Reused Components/footer.php'  ?>
