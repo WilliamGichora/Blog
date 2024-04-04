@@ -1,4 +1,4 @@
-<?php require 'constants.php';
+<?php require 'Admin Configurations/constants.php';
 
 //connecting the database
 $conn= new mysqli(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);

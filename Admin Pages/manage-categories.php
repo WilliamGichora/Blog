@@ -12,27 +12,39 @@
                         <i class="uil uil-pen"></i>
                         <h5>Add Posts</h5>
                     </a>
-                    <a href="./dashboard.php">
+                </li>
+                <li>
+                    <a href="./index.php">
                         <i class="uil uil-pen"></i>
                         <h5>Manage Posts</h5>
                     </a>
-                    <a href="./add_user.php">
-                        <i class="uil uil-pen"></i>
-                        <h5>Add User</h5>
-                    </a>
-                    <a href="./manage_users.php">
-                        <i class="uil uil-pen"></i>
-                        <h5>Manage Users</h5>
-                    </a>
-                    <a href="./add_category.php">
-                        <i class="uil uil-pen"></i>
-                        <h5>Add Category</h5>
-                    </a>
-                    <a href="./manage-categories.php" class="active">
-                        <i class="uil uil-pen"></i>
-                        <h5>Manage Category</h5>
-                    </a>
                 </li>
+                <?php if (isset($_SESSION['userIsAdmin'])) : ?>
+                    <li>
+                        <a href="./add_user.php">
+                            <i class="uil uil-pen"></i>
+                            <h5>Add User</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./manage_users.php" class="active">
+                            <i class="uil uil-pen"></i>
+                            <h5>Manage Users</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./add_category.php">
+                            <i class="uil uil-pen"></i>
+                            <h5>Add Category</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./manage-categories.php">
+                            <i class="uil uil-pen"></i>
+                            <h5>Manage Category</h5>
+                        </a>
+                    </li>
+                <?php endif ?>
             </ul>
         </aside>
 

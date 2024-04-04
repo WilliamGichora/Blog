@@ -347,7 +347,6 @@ footer {
 .alert_message.error {
     background: var(--color-error);
     color: var(--color-red);
-    display: none;
 }
 
 .alert_message.success {
@@ -358,9 +357,9 @@ footer {
 .form_section {
     display: grid;
     place-items: center;
-    height: 100vh;
+   /* height: 100vh;*/
     background: #f4f4f4;
-    /*margin-top: 4.5rem;*/
+    margin-top: 4.5rem;
 }
 
 .form_section-container {

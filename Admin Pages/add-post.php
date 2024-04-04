@@ -6,9 +6,9 @@
         <div class="alert_message error">
             <p>This is an Error message</p>
         </div>
-        <form action="" enctype="multipart/form-data">
-            <input type="text" name="" id="" placeholder="Title">
-            <select name="" id="">
+        <form action="<?=ROOT_URL?>Admin Pages/add-post-logic.php" enctype="multipart/form-data" method="post">
+            <input type="text" name="title" id="" placeholder="Title">
+            <select name="category" id="">
                 <option value="1">Music and Art</option>
                 <option value="2">Science and Technology</option>
                 <option value="3">Business</option>
@@ -16,14 +16,14 @@
                 <option value="5">Food</option>
                 <option value="6">Wildlife</option>
             </select>
-            <textarea name="" id="" rows="10">Body</textarea>
+            <textarea name="body" id="" rows="10">Body</textarea>
             <div class="form_control inline">
-                <input type="checkbox" name="" id="">
+                <input type="checkbox" name="is_featured" id="" value="1">
                 <label for="is_feautured">Featured</label>
             </div>
             <div class="form_control">
                 <label for="thumbnail">Add Thumbnail</label>
-                <input type="file" name="" id="thumbnail">
+                <input type="file" name="thumbnail" id="thumbnail">
             </div>
             <button type="submit" class="Otherbtn">Add Post</button>
         </form>

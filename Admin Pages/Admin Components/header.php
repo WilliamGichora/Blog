@@ -1,5 +1,17 @@
 <?php
-require 'Admin Configurations/database.php'
+require 'Admin Configurations/database.php';
+
+if (isset($_SESSION['user_ID'])) {
+    $id=filter_var($_SESSION['user_ID'], FILTER_SANITIZE_NUMBER_INT);
+    $query= "SELECT avatar FROM users WHERE id='$id'";
+    $result= mysqli_query($conn,$query);
+    $avatar=mysqli_fetch_assoc($result);
+}
+
+if(!isset($_SESSION['user_ID'])){
+    header('location:' .ROOT_URL. 'Login.php');
+    die();
+}
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +21,7 @@ require 'Admin Configurations/database.php'
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Website</title>
-    <link rel="stylesheet" href="<?=ROOT_URL?>styles/style.css">
+    <link rel="stylesheet" href="<?= ROOT_URL ?>styles/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,16 +37,21 @@ require 'Admin Configurations/database.php'
                 <li><a href="<?= ROOT_URL ?>about.php">About</a></li>
                 <li><a href="<?= ROOT_URL ?>services.php">Services</a></li>
                 <li><a href="<?= ROOT_URL ?>contact.php">Contact</a></li>
-                <li><a href="<?= ROOT_URL ?>signUp.php">Register</a></li>
-                <li class="nav_profile">
-                    <div class="avatar">
-                        <img src="./Assets/images/User.png" alt="">
-                    </div>
-                    <ul>
-                        <li><a href="<?= ROOT_URL ?>Admin Pages/dashboard.php">Dashboard</a></li>
-                        <li><a href="<?= ROOT_URL ?>logout.php">Logout</a></li>
-                    </ul>
-                </li>
+
+                <?php if (isset($_SESSION['user_ID'])) : ?>
+                    <li class="nav_profile">
+                        <div class="avatar">
+                        <img src="<?= ROOT_URL . 'Assets/images/' .$avatar['avatar'] ?>" alt="">
+                        </div>
+                        <ul>
+                            <li><a href="<?= ROOT_URL ?>Admin Pages/index.php">Dashboard</a></li>
+                            <li><a href="<?= ROOT_URL ?>logout.php">Logout</a></li>
+                        </ul>
+                    </li>
+                <?php else : ?>
+                    <li><a href="<?= ROOT_URL ?>Login.php">Login</a></li>
+                <?php endif ?>
+                
             </ul>
 
             <button id="nav_open-btn"><i class="uil uil-bars"></i></button>
