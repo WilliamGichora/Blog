@@ -2,7 +2,9 @@
 
 ## A Simple Blog Website
 
-This project is a basic blog website built using HTML, CSS, and JavaScript. It provides a user-friendly platform for creating and sharing content.
+This project is a basic blog website built using HTML, CSS, JavaScript, php and Mysql. It provides a user-friendly platform for creating and sharing content.
+
+We saw it fit as a group to collaborate in its development using github as it offers collaboration features.
 
 ## Getting Started
 
@@ -13,10 +15,6 @@ Use Git to clone this repository to your local machine:
 ```bash
 git clone https://github.com/your-username/semezana.git
 ```
-
-Run the Project:
-
-Open the index.html file in your preferred web browser. The website should launch and be ready for use.
 
 ## Contributing
 
@@ -30,7 +28,7 @@ Credits
 
 ## Credits
 
-The development of SEMEZANA is a collaborative effort. We thank the following contributors:
+The development of SEMEZANA is a collaborative effort . The following contributors are group members who aided in the development of this 2.2 Computer Science Web development project:
 
 - [Mark Gichora](https://github.com/markgichora) ([WilliamGichora](https://github.com/WilliamGichora))
 - [Moseti Obadiah](https://github.com/moseti) ([MosetiObadiah](https://github.com/MosetiObadiah))
